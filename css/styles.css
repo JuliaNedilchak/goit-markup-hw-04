@@ -1,0 +1,455 @@
+:root {
+  --primary-white-color: #ffffff;
+  --background-white-color: #f5f5f5;
+  --primary-dark-color: #2f303a;
+  --secondary-white-color: #f5f4fa;
+  --accent-color: #2196f3;
+  --title-color: #212121;
+  --text-color: #757575;
+  --card-set-gap: 30px;
+  --items-color: #afb1b8;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  color: var(--secondary-white-color);
+  font-family: 'roboto', sans-serif;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.link-icon,
+.phone-icon {
+  margin-right: 10px;
+}
+.contacts {
+  align-items: center;
+}
+.head-content {
+  display: flex;
+  align-items: center;
+}
+.main-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ececec;
+}
+.site-nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: 93px;
+}
+.site-nav .site-nav-link {
+  padding: 32px 0px;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+.contacts {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+.contacts .numbers:not(:last-child) {
+  margin-right: 50px;
+}
+.hero {
+  padding: 200px 0px;
+}
+.hero-text {
+  margin-bottom: 30px;
+}
+.overlay {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/Img-5.jpg');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+}
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+.block:not(:last-child) {
+  margin-right: 30px;
+}
+.size {
+  display: flex;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-white-color);
+  margin-bottom: 17px;
+}
+
+.advantages {
+  display: flex;
+}
+.hide {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.advantages-title {
+  display: block;
+  margin-bottom: 10px;
+}
+.titles {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.advantages-text {
+  display: block;
+}
+.advantages {
+  padding-left: 0;
+  margin: 0px;
+}
+.advantages .block {
+  width: 270px;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.section.photo {
+  padding-top: 0px;
+}
+.advant {
+  padding-bottom: 107px;
+}
+.pictures-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.pictures-list .pic:not(:last-child) {
+  margin-right: 30px;
+}
+
+header {
+  color: var(--primary-white-color);
+}
+.collegues-list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.content {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.collegue-name {
+  margin-bottom: 10px;
+}
+.card {
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+}
+.social-item {
+  fill: var(--items-color);
+}
+.social-link:hover,
+.social-link:focus {
+  border-radius: 50%;
+  background-color: #2196f3;
+}
+.social-link:hover .social-item,
+.social-link:focus .social-item {
+  fill: var(--primary-white-color);
+}
+
+.social-lists:not(:last-child) {
+  margin-right: 10px;
+}
+.collegue-job {
+  margin-bottom: 16px;
+}
+.content {
+  background-color: var(--primary-white-color);
+}
+.list-items {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.collegues-list .card:not(:last-child) {
+  margin-right: 30px;
+}
+
+header .logo,
+footer .logo {
+  font-family: 'Raleway', sans-serif;
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+}
+
+header .part-head {
+  font-family: 'Raleway', sans-serif;
+  color: #000000;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.38;
+}
+
+footer .part-footer {
+  font-family: 'Raleway', sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.38;
+}
+.site-nav .site-nav-link {
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  display: block;
+}
+.contacts .contacts-details {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  color: var(--text-color);
+  display: block;
+  padding: 32px 0px;
+}
+
+.site-nav .site-nav-link:hover,
+.site-nav .site-nav-link:focus {
+  color: var(--accent-color);
+}
+.site-nav .active {
+  color: var(--accent-color);
+  font-size: 14px;
+}
+.contacts .contacts-details:hover,
+.contacts .contacts-details:focus {
+  color: var(--accent-color);
+}
+.hero {
+  background-color: var(--primary-dark-color);
+}
+h1 {
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+}
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.button {
+  padding: 10px 32px;
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.advantages-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  color: var(--title-color);
+  text-transform: uppercase;
+}
+.advantages-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-color);
+}
+.titles {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--title-color);
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.work {
+  background-color: var(--secondary-white-color);
+}
+.collegue-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  color: var(--title-color);
+}
+.collegue-job {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.17;
+  color: var(--text-color);
+}
+.address-list .address:hover,
+.address-list .address:focus {
+  color: var(--accent-color);
+}
+.address-list .address-link:hover,
+.address-list .address-link:focus {
+  color: var(--accent-color);
+}
+
+footer {
+  background-color: var(--primary-dark-color);
+}
+.shape {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--primary-white-color);
+}
+
+.address-list .address-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+}
+.address-list {
+  padding: 0px;
+  margin: 0px;
+}
+
+.address-list .add:not(:last-child) {
+  margin-bottom: 9px;
+}
+address {
+  margin-top: 20px;
+}
+.filter-list {
+  padding: 0px;
+  margin: 0px;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 34px;
+}
+.button-filters {
+  padding: 6px 22px;
+  border-radius: 4px;
+}
+.item-type:not(:last-child) {
+  margin-right: 8px;
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
+}
+
+.card-item {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+.intro {
+  padding: 20px 24px;
+}
+.button-filters {
+  font-weight: 500;
+  font-family: 'roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--title-color);
+  background-color: var(--secondary-white-color);
+}
+.button-filters:hover,
+.button-filters:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.title-portfolio {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--title-color);
+  margin-bottom: 4px;
+}
+.intro {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+.text-portfolio {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-color);
+}
+.address-list .address,
+.address-list .address-link {
+  font-style: normal;
+}
