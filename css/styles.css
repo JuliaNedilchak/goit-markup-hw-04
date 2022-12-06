@@ -227,7 +227,17 @@ header {
 .collegues-list .card:not(:last-child) {
   margin-right: 30px;
 }
-
+.clients {
+  display: flex;
+}
+.clients-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+}
 header .logo,
 footer .logo {
   font-family: 'Raleway', sans-serif;
