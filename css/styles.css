@@ -195,18 +195,17 @@ header {
   height: 44px;
   align-items: center;
   justify-content: center;
+  color: var(--items-color);
 }
-.social-item {
-  fill: var(--items-color);
-}
+
 .social-link:hover,
 .social-link:focus {
   border-radius: 50%;
   background-color: #2196f3;
+  color: var(--primary-white-color);
 }
-.social-link:hover .social-item,
-.social-link:focus .social-item {
-  fill: var(--primary-white-color);
+.social-item {
+  fill: currentColor;
 }
 
 .social-lists:not(:last-child) {
