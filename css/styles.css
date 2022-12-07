@@ -32,6 +32,7 @@ body {
 .link-icon,
 .phone-icon {
   margin-right: 10px;
+  fill: currentColor;
 }
 .contacts {
   align-items: center;
@@ -191,8 +192,8 @@ header {
 }
 .social-link {
   display: flex;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   align-items: center;
   justify-content: center;
   color: var(--items-color);
@@ -207,7 +208,10 @@ header {
 .social-item {
   fill: currentColor;
 }
-
+.social-lists {
+  width: 44px;
+  height: 44px;
+}
 .social-lists:not(:last-child) {
   margin-right: 10px;
 }
@@ -229,6 +233,11 @@ header {
 }
 .clients {
   display: flex;
+  padding: 0;
+  margin: 0;
+}
+.clients .clients-list:not(:last-child) {
+  margin-right: 30px;
 }
 .clients-link {
   display: flex;
@@ -237,6 +246,15 @@ header {
   align-items: center;
   justify-content: center;
   border: 1px solid #afb1b8;
+  color: var(--items-color);
+}
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+.clients-item {
+  fill: currentColor;
 }
 header .logo,
 footer .logo {
@@ -367,9 +385,56 @@ h1 {
 footer {
   background-color: var(--primary-dark-color);
 }
+
+.join-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+.join {
+  display: block;
+  margin-left: 70px;
+}
+.media-list .media-part:not(:last-child) {
+  margin-right: 10px;
+}
 .shape {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.join-part {
+  display: flex;
+  align-items: baseline;
+}
+.media-part {
+  width: 44px;
+  height: 44px;
+}
+.media-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.media-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-white-color);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.media-icon {
+  fill: currentColor;
+}
+.media-link:hover,
+.media-link:focus {
+  background-color: var(--accent-color);
 }
 .address {
   font-weight: 400;
